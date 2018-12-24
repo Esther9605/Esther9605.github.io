@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>龍貓歷險記</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        #top_nav {
+            background-color: #225273;
+            height: 40px;
+            position: relative;
+        }
+
+        #top_nav .logo {
+            height: 70%;
+            width: 10%;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #banner {
+            height: 100vh;
+            background-image: url("img/banner.jpg");
+            background-size: cover;
+            background-position-y: 50%;
+            background-attachment: fixed;
+        }
+
+        #main_nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #163921;
+        }
+
+        #main_nav a.nav_link {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 20px;
+            float: left;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        #story {
+            background-color: #78ABD8;
+            padding: 80px 0;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        #story h1 {
+            text-align: center;
+        }
+
+        #intro {
+            background-color: white;
+            padding: 80px 0;
+        }
+
+        #intro .left_box {
+            float: left;
+            width: 33.33%;
+            padding: 0 20px;
+        }
+
+        #intro .left_box img {
+            width: 100%;
+        }
+
+
+        #studio {
+            background-color: #333;
+            padding: 60px 20px;
+        }
+
+        #studio .left_box {
+            float: left;
+            width: 50%;
+            padding: 0 20px;
+            color: white;
+        }
+
+        #studio .left_box h1 {
+            text-align: center;
+        }
+
+        #studio .left_box img {
+            margin-top: 15%;
+            width: 100%;
+        }
+
+
+        #music .left_box {
+            float: left;
+            width: 50%;
+            height: 50vh;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="top_nav">
+        <img class="logo" src="img/logo.gif" alt="龍貓logo">
+    </nav>
+
+    <section id="banner"></section>
+
+    <nav id="main_nav">
+        <div class="container">
+            <a class="nav_link" href="#story">故事介紹</a>
+            <a class="nav_link" href="#into">人物簡介</a>
+            <a class="nav_link" href="#studio">吉卜力工作室</a>
+            <a class="nav_link" href="#music">音樂特輯</a>
+            <a class="nav_link" href="#location">觀光地點</a>
+            <a class="nav_link" href="#exercise">跟著龍貓動吃動</a>
+            <div class="clearfix"></div>
+        </div>
+    </nav>
+
+    <section id="story">
+        <div class="container">
+            <h1>故事介紹</h1>
+            <p>1958年（昭和33年），大學教授草壁達郎和他的兩個女兒—10歲的姊姊小月、5歲的小梅搬進森林附近的一個老舊房子，而她們的媽媽因染上了結核病在醫院養病中。由於媽媽在醫院養病，爸爸也有校務工作要處理，所以小月和小梅經常在森林玩耍，小梅發現了只有小孩才能看見的不可思議世界—森林的守護神「大龍貓」。
+                <br>本片最經典的片段就是小月與小梅在森林公車站牌等待下班的父親回家，但父親因為火車誤點未能搭上平時所搭乘的公車，使得兩姊妹在雨中淋雨。就在這時，大龍貓也到公車站牌等車，因此小梅與小月就和大龍貓一起在雨中撐傘，等待龍貓巴士的經典畫面。
+                <br>最終劇情是小月與小梅從醫院得知母親的病情惡化，小梅想把一個成熟的玉米帶給母親時，但不小心迷了路而走出了村莊，眾人遍尋不著甚至以為小梅落水失蹤。由於父親當時已去醫院探病而不在家，小月萬般無奈情況下，只能跑去森林找會法術的大龍貓求助，大龍貓因此召喚了龍貓巴士，在貓巴士的神奇幫助下，兩姊妹在醫院外遙望她們的母親，並得知她們的母親病情好轉，不久就可以出院。
+            </p>
+        </div>
+    </section>
+
+
+    <section id="intro">
+        <div class="container">
+            <h1>人物簡介</h1>
+            <div class="left_box">
+                <img src="img/totoro.png" alt="大龍貓">
+                <h3>龍貓(トトロ)</h2>
+                    <p>1302歲，身體是灰綠色的，是友善的森林守護者，主要食物為橡子。外型是3隻龍貓中最大的一隻，至少三公尺高；一般來說龍貓指的就是最大的這一隻。
+                        <br>在劇中被稱呼為「トトロ」（Totoro）是源自小梅問它名字的時候，它發出了類似「TO、TO、RO（意思為好睏喔——）」的聲音，於是小梅認為那就是它的名字。
+                    </p>
+            </div>
+            <div class="left_box">
+                <img src="img/mid-totoro.png" alt="中龍貓">
+                <h3>中龍貓(中トト)</h3>
+                <p>679歲，身體呈藍色，大約六十公分高。</p>
+            </div>
+            <div class="left_box">
+                <img src="img/min-totoro.jpg" alt="小龍貓">
+                <h3>小龍貓(チビトト)</h3>
+                <p>109歲，身體呈白色，是3隻龍貓中最小隻的，大約20公分高，是可以隨時隱形的一隻龍貓。</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+    <section id="studio">
+        <div class="container">
+            <div class="left_box">
+                <h1>吉卜力工作室</h1>
+                <p>
+                    是一家日本的動畫工作室。其動畫作品以高品質著稱，其細膩又富有生氣、充滿想像力的作品在全世界獲得極高的評價。
+                    吉卜力工作室現今位於日本東京都近郊的小金井市，佔地300多坪，目前約有300多名員工。工作室標識為其代表作品角色《龍貓》來設計的。
+                    吉卜力工作室的作品主要由宮崎駿、高畑勳負責創作，鈴木敏夫擔任行銷。作曲家久石讓亦為許多吉卜力工作室的作品製作過電影音樂。該工作室的影像作品由迪士尼公司發行。
+                </p>
+                <p>
+                    「吉卜力」是由宮崎駿命名，意思是在撒哈拉沙漠上吹著的熱風（ ghibli ）；另外也是第二次世界大戰時由義大利飛機製造商卡普羅尼開發的一種偵察機「卡普羅尼 Ca.309」名字。
+                    <br>而「ghibli」的發音依照義大利原音發音應為「ギブリ（ gi bu ri ）」，但因宮崎駿本人當初的誤解，唸作「ジブリ（ ji bu
+                    ri）」，此名因此顯得獨一無二，工作室本身也因而順理成章，不打算對唸法再作修正。吉卜力工作室從2003年開始發行的雜誌名字也叫《熱風》。
+                    <br>2005年吉卜力從德間書店集團脫離、成為獨立的公司。因成為獨立公司需花費一筆金額將原先使用的名稱「吉卜力」從德間書店裡買下，當時宮崎駿及鈴木敏夫無意向德間書店買回「吉卜力」的名字、並打算採用「Sirocco」（同為熱風意思的字詞）作為新的公司名稱。但因新名稱未得到工作室內部的正面回應，仍出資了大筆金額將名稱「吉卜力」買回。
+                </p>
+            </div>
+            <div class="left_box">
+                <img src="img/studio.jpg" alt="吉卜力工作室logo">
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+    <section id="music">
+        <iframe class="left_box" rc="https://www.youtube.com/embed/yyDWbUofrpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+
+    </section>
+    <section id="location"></section>
+    <section id="exercise"></section>
+    <footer></footer>
+</body>
+
+</html>
