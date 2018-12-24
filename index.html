@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冰雪奇緣</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            position: relative;
+            /* height: 2000px; */
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        #navbar {
+            height: 100vh;
+            width: 360px;
+            background-color: rgb(168, 217, 245);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        #navbar #logo {
+            width: 150px;
+            height: 150px;
+            background-image: url("img/frozen3.jpg");
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #navbar .nav-link {
+            text-decoration: none;
+            font-size: 32px;
+            line-height: 1.5;
+            color: cornflowerblue;
+            display: block;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            transition: 0.5s;
+        }
+
+        #navbar .nav-link:hover{
+            font-size: 40px;
+            font-weight: 700;
+        } 
+
+        
+
+        #navbar .nav-link:visited{
+            color: rgb(116, 157, 233);
+        }
+
+        #navbar .nav-link:active{
+            color: aliceblue;
+        }
+
+        #navbar .nav-link:nth-child(2) {
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        #navbar .nav-link:nth-child(3) {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        #content {
+            background-color: rgb(197, 223, 236);
+            height: 100vh;
+            width: calc(100% - 360px);
+            margin-left: auto;
+            position: relative;
+        }
+
+        #content .block {
+            /* 如果寬度設定必須是固定的可用以下寫法 */
+            width: 100%;
+            max-width: 900px;
+            /* 寬度用比例的方式 */
+            /* width: 70%; */
+
+            height: 600px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        #content .block .box {
+            float: left;
+            height: 100%;
+            width: 33.33%;
+            padding: 5px;
+            transition: 0.8s;
+        }
+
+        #content .block .box .pic {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/frozen.jpg");
+            background-size: cover;
+            background-position: 55%;
+        }
+
+        #content .block .box:first-child .pic {
+            background-image: url("img/Frozen6.png");
+            size: cover;
+            background-position: 89%;
+        }
+
+        #content .block .box:nth-child(3) .pic {
+            background-image: url("img/frozen2.jpg");
+            size: cover;
+            background-position: 25%;
+        }
+
+        .pc {
+            display: block;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            #content .block .box {
+                float: left;
+                height: 50%;
+                width: 50%;
+                padding: 5px;
+                transition: 1s;
+            }
+
+            #content .block .box:first-child {
+                float: left;
+                height: 50%;
+                width: 100%;
+                padding: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            #navbar {
+                height: 100px;
+                width: 100%;
+                z-index: 999;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+                transition: 0.3s;
+            }
+
+            #navbar #logo {
+                width: 80px;
+                height: 80px;
+                top: 50%;
+                left: 5%;
+                transform: translate(0, -50%);
+                transition: 0.5s;
+            }
+
+            #navbar .nav-link {
+                font-size: 24px;
+                top: 50%;
+                left: 75%;
+                transform: translate(0, -50%);
+                transition: 0.8s;
+            }
+
+            #navbar .nav-link:nth-child(2) {
+                top: 50%;
+                left: 65%;
+                transform: translate(0, -50%);
+            }
+
+            #navbar .nav-link:nth-child(3) {
+                top: 50%;
+                left: 85%;
+                transform: translate(0, -50%);
+            }
+
+            #content {
+                width: 100%;
+                height: 100vh;
+                margin-top: 100px;
+            }
+
+            #content .block {
+                width: 90%;
+                height: 800px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: 1s;
+            }
+        }
+
+        @media only screen and (max-width: 575px) {
+            #navbar .pc {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            #navbar {
+                height: 80px;
+            }
+
+            #navbar #logo {
+                width: 60px;
+                height: 60px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            #navbar i.fas {
+                font-size: 40px;
+                position: relative;
+                top: 50%;
+                left: 10%;
+                transform: translate(0, -50%);
+            }
+
+            #content {
+                margin-top: 80px;
+            }
+
+            #content .block {
+                width: 100%;
+                height: 100%;
+            }
+
+            #content .block .box {
+                width: 100%;
+                height: 33.33%;
+                padding: 0;
+            }
+
+            #content .block .box:first-child {
+                padding: 0;
+                
+            }
+
+                    
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo"></div>
+        <a class="pc nav-link" href="https://frozen.disney.com/">官網</a>
+        <a class="pc nav-link" href="https://www.facebook.com/DisneyFrozen">粉專</a>
+        <a class="pc nav-link" href="https://en.wikipedia.org/wiki/Frozen_(2013_film)">介紹</a>
+        <i class="fas fa-bars mobile"></i>
+    </nav>
+    <section id="content">
+        <div class="block">
+            <div class="box">
+                <div class="pic">x</div>
+            </div>
+            <div class="box">
+                <div class="pic">y</div>
+            </div>
+            <div class="box">
+                <div class="pic">z</div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
