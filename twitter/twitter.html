@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <style>
-
+        *{
+            box-sizing: border-box;
+        }
         body {
             margin: 0;
-            padding-top: 47px; 
+            padding-top: 50px;
             height: 2000px;
         }
 
@@ -26,11 +28,11 @@
         }
 
         .container {
-            max-width: 1140px;
+            max-width: 1170px;
             margin: 0 auto;
         }
 
-        .navbar. left_box{
+        .navbar .left_box{
             float:left;
         }
         i.fa-twitter {
@@ -46,44 +48,48 @@
             padding: 15px;
             float:left;
             text-decoration: none;
+            border-bottom: #fff 2px solid;
+            height: 50px;
         }
         .navbar .nav-link:hover{
             color: #1DA1F2;
+            border-bottom: #1DA1F2 2px solid;
         }
         .navbar .right_box{
             float:right;
         }
         .navbar .right_box .searchbox{
-            width: 180px;
+            width: 220px;
             border-radius: 20px;
             margin: 9px;
             background-color: #F5F8FA;
-            padding: 5px;
             border:solid 0.5px #ccc;
             transition: 0.3s;
             font-size: 12px;
-            padding: 5px 15px;
+            padding: 8px 20px;
+            height: 32px;
         }
 
         .navbar .right_box .searchbox:focus{
             outline: none;
             border:#0084B4 2px solid;
+            height: 32px;
         }
         .navbar .right_box span{
-            color:#66757F;
-            font-size:13px;
+            color: #66757F;
+            font-size: 13px;
             display: block;
             padding: 15px;
             float:right;
         }
         .navbar .right_box span:hover{
-            text-decoration: ;
+            text-decoration: underline;
         }
         .clearfix{
             clear: both;
         }
         .banner{
-            height: 500px;
+            height: calc(100vh - 50px);
             background-image: url("img/taylor.jpg");
             background-size: cover;
             background-position: 0 62%;
@@ -110,8 +116,7 @@
         }
         .navbar2 .left_box {
             float: left;
-            margin-left: 300px;
-            
+            margin-left: 300px;    
         }
         .navbar2 .left_box .nav-link {
             float: left;
@@ -119,32 +124,38 @@
             color:#66757F;
             font-size:13px;
             display: block;
-            padding: 15px;
+            padding: 15px 20px 10px 20px;
             text-decoration: none;
             font-weight: 700;
+            border-bottom: #fff 2px solid;
+            height: 60px;
+            transition: 0.3s;
         }
         .navbar2 .left_box .nav-link:hover {
             border-bottom: #0084B4 2px solid;
         }
+
+        .navbar2 .left_box .nav-link:hover span{
+            color: #0084B4;
+        }
         .navbar2 .left_box .nav-link span {
             font-size: 18px;
-        }
-        .navbar2 .left_box .nav-link span:hover {
-            color: #0084B4;
         }
         .navbar2 .right_box {
             float: right;
         }
         .navbar2 .right_box button{
-            margin-top:15px; 
+            margin-top:10px; 
             border-radius: 20px;
             padding: 10px 40px;
             border: #0084B4 solid 1.2px;
             background-color: white;
             transition: 0.3s;
+            outline: none;
         }
         .navbar2 .right_box button:hover{
-            background-color: rgba(45, 102, 139, 0.5) ;
+            background-color: rgba(45, 102, 139, 0.25) ;
+            outline: none;
         }
     </style>
 </head>
@@ -157,8 +168,8 @@
                 <a class="nav-link" href="https://twitter.com/">關於</a>
             </div>
             <div class="right_box">
-                <input class="searchbox" type="text" name="" placeholder="搜尋Twitter" required>
-                <span class="type">已經擁有帳戶?<b>登入</b></span>
+                <input class="searchbox" type="text" name="" placeholder="搜尋 Twitter" required>
+                <span>已經擁有帳戶?&ensp;<b>登入</b></span>
             </div>
             <div class="clearfix"></div>
         </div>
